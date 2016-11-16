@@ -1,0 +1,27 @@
+{
+  "name": "slack-remind",
+  "version": "1.0.0",
+  "description": "reminders where you need them.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/djfordz/slackRemind.git"
+  },
+  "keywords": [
+    "notifications",
+    "chrome",
+    "alarms",
+    "todo",
+    "slack",
+    "remind"
+  ],
+  "author": "David Ford",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/djfordz/slackRemind/issues"
+  },
+  "homepage": "https://github.com/djfordz/slackRemind#readme"
+}

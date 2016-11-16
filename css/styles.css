@@ -1,0 +1,80 @@
+body {
+    min-width: 250px;
+    font-family: arial, tacoma, sans-serif;
+    font-size: 100%;
+    background-color: #1976D2;
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    margin: auto;
+}
+
+button, #submit {
+    background-color: #FF4081;
+    font-size: 0.85em;
+    border-radius: 10px;
+    margin: 10px auto 0 auto;
+}
+
+input, button {
+    border: none;
+    padding: 3px 6px 3px 6px;
+}
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: .95em;
+}
+h2, h3, h4, h5, h6 {
+    font-size: .70em;
+}
+p , li {
+    font-size: .85em;
+    line-height: 1.5em;
+}
+
+ul {
+    display: block;
+    margin-left: 10px;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0 auto;
+    min-width: 230px;
+}
+
+footer {
+    padding: 2%;
+    text-align: center;
+    margin 0 auto;
+}
+
+#todos {
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+#title {
+    min-width: 230px;
+    border-radius: 10px;
+    height: 1.8em;
+    padding-left: 10px;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+   color: #757575;
+}
+
