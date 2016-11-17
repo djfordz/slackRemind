@@ -4,21 +4,33 @@ function save_options() {
   chrome.storage.sync.set({
     endpoint: endpoint 
   }, function() {
-    document.getElementById('status').append('Options saved.');
-    console.log(status.textContent);
+      var status = document.getElementById('status');
+          status.append('Options saved.');
     setTimeout(function() {
       status.textContent = '';
     }, 750);
   });
+  listEndpoint();
 }
 
-chrome.storage.sync.get(null, function(items) {
-    if(items.endpoint || items.timezone) {
-        document.getElementById('cendpoint').append(items.endpoint);
+function showEndpoint(storedData) {
+    if(typeof(storedData) !== 'undefined') {
+        if(storedData.endpoint) {
+            var el = document.getElementById('cendpoint');
+            if(el !== null)
+                el.textContent = '';
+                el.append(storedData.endpoint);
+        }
     }
-});
+
+}
+
+function listEndpoint() {
+    chrome.storage.sync.get('endpoint', showEndpoint);
+}
 
 
 document.getElementById('save').addEventListener('click',
     save_options);
+listEndpoint();
 })(jQuery);

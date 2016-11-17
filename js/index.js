@@ -491,8 +491,7 @@ function showNotification(storedData) {
                     dt2 = dt2.substr(0, 10);
                     dt2 = Number(dt2);
                    if(dt == dt2) {
-                       console.log('test');
-                        //sendToSlack(todo);
+                        sendToSlack(todo);
                    }
                 }
             }
